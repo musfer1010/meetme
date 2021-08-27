@@ -447,18 +447,20 @@ body{
     width:70%;
     margin-right:-1%;
     padding:3%;
+    padding-top: 5%;
     font-size: large;
     background-color: transparent;
-    border: 1px solid gray
-
+    border: 1px solid gray;
+    vertical-align: baseline;
 }
 .footertextfield input::placeholder{
     color:white;
 }
-.footertextfield> button{
+.footertextfield> span{
     margin:0;
-    padding:2%;
-    padding-bottom: 3%;
+    padding:3% 2%;
+    margin-top: 2%;
+    vertical-align: center;
     background-image:linear-gradient(to right, #797ffb , #88edfb);
     color:white;
     border: none ;
@@ -581,12 +583,20 @@ body{
     height:500px;
     margin-bottom: 16%;
     }
+    .footertextfield> span{
+        padding:2.5% 2%;
+    }
 }
 @media screen and (max-width:800px){
     .persondiv{
     height:350px;
     margin-bottom: 16%;
+    
     }
+    .footertextfield> span{
+        padding:1% 2%;
+    }
+    
 }
 @media screen and (max-width:570px){
     .persondiv{
@@ -604,6 +614,11 @@ body{
 
 
 @media screen and (max-width: 375px){
+    .main{
+        display:flex;
+        flex-direction: column;
+
+    }
     .navbar>a{
         display: none;
     }
@@ -625,6 +640,7 @@ body{
         margin:0%;
         border-radius: 0px;
         flex-direction: column;
+        height: 100%;
     }
     .personContent{
         font-size: 3vw;
@@ -806,17 +822,18 @@ body{
     .newsletter>h2{
         font-size: medium;
     }
+
     .footertextfield input{
         width:85%;
         font-size: small;
     
     }
-    .footertextfield> button{
-        padding:1%;
-        padding-bottom: 2.2%;
+    .footertextfield> span{
+        padding:2%;
         background-image:linear-gradient(to right, #797ffb , #88edfb);
         color:white;
         border: none ;
+        align-content: center;
     }
     .followme{
         flex:100%;
@@ -851,6 +868,15 @@ body{
         background-image: linear-gradient(to right, #ffffff , #ffffff);
         height: 75%;
     }
+    .footertextfield> span{
+        padding:1.7% 2%;
+    }
+    .footertextfield>input{
+        padding:4%;
+        padding-top: 5.5%;
+        width:85%;
+    }
+    
 } 
 @media screen and (max-width: 300px){
     .persondiv{
