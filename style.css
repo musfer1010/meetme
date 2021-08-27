@@ -78,9 +78,10 @@ body{
     
 }
 .persondiv{
-    background: linear-gradient(90deg, #797ffb 50%, #88edfb 50%);
+    background-image: linear-gradient(to right, #797ffb , #88edfb);
     height:1000px;
     margin-bottom: 9%;
+    padding-top: 5%;
 
 }
 .personContent>h1{
@@ -839,7 +840,16 @@ body{
     }
     .persondiv{
         background-image: linear-gradient(to right, #ffffff , #ffffff);
-        height: 80%;
+        height: 75%;
     }
 } 
-
+@media screen and (max-width: 300px){
+    .persondiv{
+        height: 60%;
+    }
+}
+@media screen and (max-width: 240px){
+    .persondiv{
+        height: 45%;
+    }
+}
