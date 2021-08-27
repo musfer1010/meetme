@@ -546,7 +546,13 @@ body{
 
 @media screen and (max-width:1800px){
     .persondiv{
-    height:900px;
+    height:800px;
+    margin-bottom: 16%;
+    }
+}
+@media screen and (max-width:1700px){
+    .persondiv{
+    height:850px;
     margin-bottom: 16%;
     }
 }
@@ -644,7 +650,7 @@ body{
         flex-direction: column;
     }
     .aboutContent h1{
-        padding-top:13%;
+        padding-top:36%;
         font-size:8vw;
     }
     
@@ -759,6 +765,9 @@ body{
     .testimonials>div>p{
         font-size: 3vw;
         padding: 3%;
+    }
+    .testimonials{
+        padding-bottom: 10%;
     }
     .testtile2{
         display:none;
